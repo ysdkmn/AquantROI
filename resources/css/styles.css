@@ -1,0 +1,52 @@
+/* universal styles */
+
+html {
+  font-size: 16px;
+}
+
+div {
+  border: 1px solid red;
+}
+
+h2 {
+  margin: 0;
+}
+
+.container {
+  max-width: 960px
+}
+
+/* Calculator Section */
+
+.calculator {
+  padding: 4rem;
+}
+
+.calculator div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  padding: 1rem;
+  border: 5px solid black;
+  border-radius: 5px;
+  box-shadow: 7px 7px 10px gray;
+}
+
+.question, .response {
+  height: 234px;
+}
+
+.response {
+  position: relative;
+}
+
+.response:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  font-size: 4rem;
+  transform: scale(2,1);
+  top: 0;
+  content: "\f0d7";
+}
