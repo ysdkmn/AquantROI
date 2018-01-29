@@ -12,6 +12,18 @@ h2 {
   margin: 0;
 }
 
+@media only screen and (max-width: 860px){
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 730px){
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
 .container {
   max-width: 960px
 }
@@ -20,6 +32,9 @@ h2 {
 
 .calculator {
   padding: 4rem;
+  border: 5px solid black;
+  border-radius: 5px;
+  box-shadow: 7px 7px 10px gray;
 }
 
 .calculator div {
@@ -40,13 +55,20 @@ h2 {
 
 .response {
   position: relative;
+  background-image: url('../imgs/pencil-vector.png');
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 35%;
 }
 
-.response:before {
-  position: absolute;
-  font-family: 'FontAwesome';
-  font-size: 4rem;
-  transform: scale(2,1);
-  top: 0;
-  content: "\f0d7";
+input {
+  text-align: right;
+}
+
+.fa-percent {
+  margin-left: 1rem;
+}
+
+.fa-usd {
+  margin-right: 1rem;
 }
